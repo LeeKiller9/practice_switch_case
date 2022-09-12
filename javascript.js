@@ -44,8 +44,7 @@ function check_number_if_statement() {
 
 function check_number_switch_statement() {
     let number = parseInt(prompt('Type a number', '0'))
-    let abs_value = Math.abs(number)
-    let value = number / abs_value
+    let value = Math.abs(number) / number  //có thể làm đơn giản bằng cách: value = number / (-number) vẫn ra dc, lưu ý switch case cần chỉnh lại cho đúng trường hợp vì thêm dấu trừ sẽ bị đảo lại
     switch (value) {
         case 1:
             alert(1)
